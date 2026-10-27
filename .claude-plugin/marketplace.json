@@ -37,6 +37,26 @@
       "homepage": "https://github.com/nvv-dev/agent-guardrails"
     },
     {
+      "name": "growth-workflow",
+      "description": "Marketing and launch skills: versioned product context, voice profile, landing copy with proof for every claim, post review, app store listings, launch checklist and a legal pages check.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/growth-workflow.git"
+      },
+      "homepage": "https://github.com/nvv-dev/growth-workflow"
+    },
+    {
+      "name": "growth-agents",
+      "description": "A small marketing team as subagents: copywriter, content strategist, growth marketer and legal reviewer. None publishes, sends, spends money or changes prices.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/growth-agents.git"
+      },
+      "homepage": "https://github.com/nvv-dev/growth-agents"
+    },
+    {
       "name": "test-driven-development",
       "description": "Drives work as red-green-refactor cycles at the module's public boundary, and forbids weakening tests to get green.",
       "category": "development",
@@ -215,6 +235,76 @@
         "url": "https://github.com/nvv-dev/choosing-agent-components.git"
       },
       "homepage": "https://github.com/nvv-dev/choosing-agent-components"
+    },
+    {
+      "name": "product-context",
+      "description": "Creates and maintains a versioned .agents/product-context.md (product, ideal customer, positioning, objections, proof, learnings) that copy, content, design and SEO work read first.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/product-context.git"
+      },
+      "homepage": "https://github.com/nvv-dev/product-context"
+    },
+    {
+      "name": "voice-profile",
+      "description": "Builds about-me.md and voice.md from a short interview and three to five real texts; asks before starting.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/voice-profile.git"
+      },
+      "homepage": "https://github.com/nvv-dev/voice-profile"
+    },
+    {
+      "name": "landing-copy",
+      "description": "Writes page copy from the keyword map and product context - headline, subheadline, benefits, objections, CTA, with variants - where every claim has proof.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/landing-copy.git"
+      },
+      "homepage": "https://github.com/nvv-dev/landing-copy"
+    },
+    {
+      "name": "post-review",
+      "description": "Scores a draft post on hook, single idea, proof, voice, network format and CTA, and returns corrections. Never publishes.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/post-review.git"
+      },
+      "homepage": "https://github.com/nvv-dev/post-review"
+    },
+    {
+      "name": "app-store-listing",
+      "description": "Writes Play Store and App Store listings (title, descriptions, screenshot script, keywords per language) consistent with the data safety section and privacy labels.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/app-store-listing.git"
+      },
+      "homepage": "https://github.com/nvv-dev/app-store-listing"
+    },
+    {
+      "name": "launch-checklist",
+      "description": "Before and after a launch: measurement, legal pages, store listing, announcement, feedback channel and rollback plan, with evidence for every item.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/launch-checklist.git"
+      },
+      "homepage": "https://github.com/nvv-dev/launch-checklist"
+    },
+    {
+      "name": "legal-pages-check",
+      "description": "Checks privacy policy, terms and cookie notice against a per-country checklist (Colombia's Law 1581 as example) and what the app declares; flags what a lawyer must see. Not legal advice.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/legal-pages-check.git"
+      },
+      "homepage": "https://github.com/nvv-dev/legal-pages-check"
     }
   ]
 }

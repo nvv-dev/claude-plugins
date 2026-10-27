@@ -234,6 +234,97 @@
       "example": "/choosing-agent-components Quiero que el agente nunca haga push a main.",
       "invocation": "manual",
       "en": "A decision order from 'nothing' to 'plugin' that picks the cheapest component that reliably does the job."
+    },
+    {
+      "name": "product-context",
+      "source_repo": "growth-workflow",
+      "title": "Contexto del producto",
+      "tagline": "Los datos del negocio en un solo archivo, para no repetirlos en cada sesión.",
+      "what": "Crea y mantiene `.agents/product-context.md`: qué es el producto, cliente ideal, problema y alternativas, posicionamiento, objeciones, pruebas, lenguaje del cliente y aprendizajes, con versión y registro de cambios. Si el archivo ya existe, lo resume en cinco líneas y actualiza solo lo que pediste. Lo que nadie ha confirmado queda como pregunta abierta, nunca como suposición.",
+      "goal": "Que el copy, el contenido, el diseño y el SEO partan de los mismos hechos aprobados y no se contradigan entre páginas.",
+      "use_when": ["Al empezar trabajo de marketing, copy, diseño o SEO para un producto", "Cuando aparece un dato nuevo: una objeción, una prueba, un resultado de una campaña"],
+      "avoid_when": ["Especificaciones técnicas o requisitos funcionales: eso va en la spec", "Datos personales de clientes: el archivo solo guarda lo que tienes permiso de guardar"],
+      "example": "Crea el product-context de Widget Studio a partir del README y la landing actual.",
+      "invocation": "auto",
+      "en": "Creates and maintains a versioned .agents/product-context.md (product, ideal customer, positioning, objections, proof, learnings) that copy, content, design and SEO work read first."
+    },
+    {
+      "name": "voice-profile",
+      "source_repo": "growth-workflow",
+      "title": "Perfil de voz",
+      "tagline": "Que lo escrito por el agente suene a ti y no al modelo.",
+      "what": "Con una entrevista corta y 3 a 5 textos reales que escribiste tú, arma dos archivos: `about-me.md` (quién eres, tu historia en hechos, tus opiniones y temas) y `voice.md` (cómo escribes: ritmo, vocabulario, estructura, postura y formato, con un ejemplo real para cada regla). No arranca sola al cargarse: primero pregunta si quieres hacer la entrevista.",
+      "goal": "Darle a los agentes de copy y contenido una referencia concreta de tu voz, basada en evidencia y no en adjetivos.",
+      "use_when": ["Antes de pedirle a un agente posts, correos o copy con tu voz", "Cuando el contenido generado suena genérico"],
+      "avoid_when": ["Si no tienes textos propios: escribe primero algunos sin ayuda", "Para imitar la voz de otra persona sin su permiso"],
+      "example": "/voice-profile para mi marca personal; tengo tres posts de LinkedIn y un correo a clientes.",
+      "invocation": "manual",
+      "en": "Builds about-me.md and voice.md from a short interview and three to five real texts; asks before starting."
+    },
+    {
+      "name": "landing-copy",
+      "source_repo": "growth-workflow",
+      "title": "Copy de landing",
+      "tagline": "Copy de página donde cada afirmación tiene una prueba.",
+      "what": "Escribe el copy de una página a partir del mapa de palabras clave y del contexto del producto: titular, subtítulo, llamado a la acción, beneficios, pruebas, objeciones, preguntas y cierre. Da dos o tres variantes de titular, subtítulo y CTA con ángulos distintos y recomienda una. Entrega la lista de afirmaciones con su fuente y marca con `[PROOF NEEDED]` lo que no tiene prueba. Prohibido inventar cifras, testimonios o logos de clientes.",
+      "goal": "Páginas que dicen qué hace el producto, para quién y por qué creerle, con las palabras que ya usa el cliente.",
+      "use_when": ["Al escribir o reescribir una landing, la home o la página de precios", "Cuando el diseño está aprobado y faltan los textos"],
+      "avoid_when": ["Posts para redes: usa post-review y el agente de contenido", "Sin contexto del producto ni mapa de palabras clave: créalos primero"],
+      "example": "Escribe el copy de la landing de mantenimiento web con landing-copy usando el mapa de palabras clave.",
+      "invocation": "auto",
+      "en": "Writes page copy from the keyword map and product context - headline, subheadline, benefits, objections, CTA, with variants - where every claim has proof."
+    },
+    {
+      "name": "post-review",
+      "source_repo": "growth-workflow",
+      "title": "Revisión de posts",
+      "tagline": "Un puntaje y las correcciones exactas antes de publicar.",
+      "what": "Califica un borrador de post, hilo, carrusel o sección de boletín de 0 a 2 en seis criterios: gancho, una sola idea, prueba, voz, formato de la red y llamado a la acción. Por cada criterio débil cita la parte del borrador y entrega la versión corregida, más tres ganchos alternativos. Pide fuente primaria para noticias y cifras. Nunca publica ni programa nada.",
+      "goal": "Que cada post salga con una idea clara, con pruebas y con tu voz, sin depender del gusto del día.",
+      "use_when": ["Antes de publicar un post o un hilo", "Cuando un borrador \"no convence\" y no sabes por qué"],
+      "avoid_when": ["Copy de páginas: usa landing-copy", "Para que el agente publique: esta skill solo revisa"],
+      "example": "Revisa este borrador para LinkedIn con post-review y dame el puntaje.",
+      "invocation": "auto",
+      "en": "Scores a draft post on hook, single idea, proof, voice, network format and CTA, and returns corrections. Never publishes."
+    },
+    {
+      "name": "app-store-listing",
+      "source_repo": "growth-workflow",
+      "title": "Ficha de tienda de apps",
+      "tagline": "Una ficha de tienda que vende lo que la app hace y declara lo que la app recoge.",
+      "what": "Prepara la ficha de Google Play y App Store: nombre, subtítulo o descripción corta, descripción larga, palabras clave por idioma, guion de capturas y notas de versión, con el conteo de caracteres contra el límite de cada campo. Compara la ficha y la app con la sección de seguridad de datos de Play y las etiquetas de privacidad de Apple y lista cada diferencia. Solo describe funciones que ya están en producción.",
+      "goal": "Pasar la revisión de la tienda a la primera y que la ficha no prometa más de lo que la app hace o declara.",
+      "use_when": ["Antes de enviar una app a revisión o de salir de una prueba cerrada", "Al agregar un idioma o un SDK que recoge datos"],
+      "avoid_when": ["Para enviar o publicar la ficha: la skill entrega textos, no toca las consolas", "Revisión legal a fondo de la política: usa legal-pages-check"],
+      "example": "Prepara con app-store-listing la ficha de Widget Studio en español e inglés para Play Store.",
+      "invocation": "auto",
+      "en": "Writes Play Store and App Store listings (title, descriptions, screenshot script, keywords per language) consistent with the data safety section and privacy labels."
+    },
+    {
+      "name": "launch-checklist",
+      "source_repo": "growth-workflow",
+      "title": "Checklist de lanzamiento",
+      "tagline": "Lanzar sabiendo cómo medirlo y cómo volver atrás.",
+      "what": "Revisa con evidencia, antes de lanzar, la medición (meta, línea base, evento), las páginas legales, la ficha de la tienda y las páginas, el anuncio, el canal de comentarios y el plan de vuelta atrás. Después del lanzamiento repasa la misma lista: métrica contra la meta, lo que reportaron los usuarios, lo que falló y los aprendizajes, que guarda en el contexto del producto. Un fallo en medición, páginas legales o vuelta atrás es bloqueante.",
+      "goal": "Que ningún lanzamiento salga sin forma de saber si funcionó ni forma de deshacerlo.",
+      "use_when": ["Antes de lanzar un producto, una app, una funcionalidad o un sitio", "En la revisión del día 1, 7 y 30 después del lanzamiento"],
+      "avoid_when": ["Despliegues técnicos sin anuncio: usa pre-deploy-audit", "Para publicar el anuncio: la skill revisa, no publica"],
+      "example": "/launch-checklist para la salida de Widget Studio a producción el 15 de noviembre.",
+      "invocation": "manual",
+      "en": "Before and after a launch: measurement, legal pages, store listing, announcement, feedback channel and rollback plan, with evidence for every item."
+    },
+    {
+      "name": "legal-pages-check",
+      "source_repo": "growth-workflow",
+      "title": "Revisión de páginas legales",
+      "tagline": "Encontrar los vacíos de tus páginas legales antes de llevarlas al abogado.",
+      "what": "Arma el inventario de datos que la app o el sitio recoge de verdad y lo compara con la política de privacidad, los términos, el aviso de cookies y lo declarado en las tiendas. Aplica una lista por país (Colombia, Ley 1581 de 2012, como ejemplo) con la fuente de cada requisito y marca lo que debe ver un abogado. Lo dice explícitamente: no es asesoría legal.",
+      "goal": "Llegar al abogado con una lista corta de vacíos reales y preguntas precisas, en lugar de un \"¿me revisas esto?\".",
+      "use_when": ["Antes de lanzar o de enviar una app a revisión", "Después de agregar formularios, analítica, pagos o un SDK que recoge datos"],
+      "avoid_when": ["Como reemplazo de un abogado: no aprueba ni certifica nada", "Contratos complejos o sectores regulados sin revisión profesional"],
+      "example": "/legal-pages-check sobre la política de privacidad de kodaloom.com para Colombia.",
+      "invocation": "manual",
+      "en": "Checks privacy policy, terms and cookie notice against a per-country checklist (Colombia's Law 1581 as example) and what the app declares; flags what a lawyer must see. Not legal advice."
     }
   ]
 }

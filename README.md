@@ -11,6 +11,8 @@
 | [dev-workflow](https://github.com/nvv-dev/dev-workflow) | 15 skills de ingeniería: TDD, depuración sistemática, verificación antes de cerrar, revisiones profunda y de mantenibilidad, criterios EARS, ADR, abogado del diablo, triage, worktrees, auditoría previa al despliegue, modelo de amenazas, revisión de arquitectura | Cualquier persona que programe con agentes |
 | [dev-agents](https://github.com/nvv-dev/dev-agents) | 14 subagentes con responsabilidades, herramientas y límites: coordinador, analista funcional, líder técnico, auditor, QA, seguridad, backend, frontend, Android, iOS, datos, infraestructura, diseño UI/UX y SEO/GEO | Equipos (o personas solas) que quieren dividir el trabajo por roles |
 | [agent-guardrails](https://github.com/nvv-dev/agent-guardrails) | Hook probado contra comandos destructivos, proceso para evaluar skills de terceros y plantillas de CLAUDE.md, permisos, lockfile, pre-commit y CI | Todos: es lo primero que conviene instalar |
+| [growth-workflow](https://github.com/nvv-dev/growth-workflow) | 7 skills de marketing y lanzamiento: contexto del producto, perfil de voz, copy de landings, revisión de posts, fichas de tiendas de apps, checklist de lanzamiento y revisión de páginas legales | Quien lanza y vende un producto con agentes |
+| [growth-agents](https://github.com/nvv-dev/growth-agents) | 4 subagentes de marketing con límites: copywriter, estratega de contenido, growth y revisión legal. Ninguno publica, envía, gasta dinero ni cambia precios | Equipos (o personas solas) que quieren delegar el marketing por roles |
 
 ## Una skill, un repo
 
@@ -37,6 +39,13 @@ Cada skill también tiene su propio repo, con su objetivo, ejemplos y manual de 
 | [anti-generic-design-review](https://github.com/nvv-dev/anti-generic-design-review) | Que la interfaz no parezca hecha por IA: cada decisión, propia. | sola | dev-workflow |
 | [vetting-external-skills](https://github.com/nvv-dev/vetting-external-skills) | Tratar cada skill, plugin o MCP externo como código de un desconocido. | sola | agent-guardrails |
 | [choosing-agent-components](https://github.com/nvv-dev/choosing-agent-components) | ¿Skill, subagente, hook, MCP o una línea en CLAUDE.md? | a mano | agent-guardrails |
+| [product-context](https://github.com/nvv-dev/product-context) | Los datos del negocio en un solo archivo, para no repetirlos en cada sesión. | sola | growth-workflow |
+| [voice-profile](https://github.com/nvv-dev/voice-profile) | Que lo escrito por el agente suene a ti y no al modelo. | a mano | growth-workflow |
+| [landing-copy](https://github.com/nvv-dev/landing-copy) | Copy de página donde cada afirmación tiene una prueba. | sola | growth-workflow |
+| [post-review](https://github.com/nvv-dev/post-review) | Un puntaje y las correcciones exactas antes de publicar. | sola | growth-workflow |
+| [app-store-listing](https://github.com/nvv-dev/app-store-listing) | Una ficha de tienda que vende lo que la app hace y declara lo que la app recoge. | sola | growth-workflow |
+| [launch-checklist](https://github.com/nvv-dev/launch-checklist) | Lanzar sabiendo cómo medirlo y cómo volver atrás. | a mano | growth-workflow |
+| [legal-pages-check](https://github.com/nvv-dev/legal-pages-check) | Encontrar los vacíos de tus páginas legales antes de llevarlas al abogado. | a mano | growth-workflow |
 <!-- skills:end -->
 
 ## Instalar en Claude Code
@@ -46,11 +55,13 @@ Cada skill también tiene su propio repo, con su objetivo, ejemplos y manual de 
 /plugin install agent-guardrails@nvvdev
 /plugin install dev-workflow@nvvdev
 /plugin install dev-agents@nvvdev
+/plugin install growth-workflow@nvvdev
+/plugin install growth-agents@nvvdev
 ```
 
 ## Mantener los repos por skill
 
-La versión canónica de cada skill vive en su paquete (`dev-workflow` o `agent-guardrails`), y los textos de cada README en [catalog/skills.json](catalog/skills.json). Los repos individuales se generan:
+La versión canónica de cada skill vive en su paquete (`dev-workflow`, `agent-guardrails` o `growth-workflow`), y los textos de cada README en [catalog/skills.json](catalog/skills.json). Los repos individuales se generan:
 
 ```bash
 python3 scripts/export_skill_repos.py --bundles .. --out ../skills
@@ -86,5 +97,7 @@ Index of the skills, agents and guardrails published by the **nvvdev** community
 - **[dev-workflow](https://github.com/nvv-dev/dev-workflow)** — 15 engineering skills.
 - **[dev-agents](https://github.com/nvv-dev/dev-agents)** — 14 role-based subagents with explicit limits.
 - **[agent-guardrails](https://github.com/nvv-dev/agent-guardrails)** — destructive-command hook, skill vetting and governance templates.
+- **[growth-workflow](https://github.com/nvv-dev/growth-workflow)** — 7 marketing and launch skills.
+- **[growth-agents](https://github.com/nvv-dev/growth-agents)** — 4 marketing subagents that never publish, send, spend or change prices.
 
 Skills use the open `SKILL.md` format and work in other compatible agents. Everything is written from scratch, credited, scanned with SkillSpector in CI, and MIT-licensed.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate one standalone repository per skill from the bundle repositories.
 
-The bundle repos (dev-workflow, agent-guardrails) hold the canonical SKILL.md files.
+The bundle repos (dev-workflow, agent-guardrails, growth-workflow) hold the canonical SKILL.md files.
 catalog/skills.json holds the human-facing texts. This script writes, for each skill,
 a folder ready to be pushed as github.com/nvv-dev/<skill-name>, and refreshes the
 per-skill entries of this marketplace and the skill table of this README.
@@ -9,7 +9,7 @@ per-skill entries of this marketplace and the skill table of this README.
 Usage:
     python3 scripts/export_skill_repos.py --bundles ../ --out ../skills-out
 
---bundles  folder that contains the bundle repos (dev-workflow/, agent-guardrails/)
+--bundles  folder that contains the bundle repos (dev-workflow/, agent-guardrails/, growth-workflow/)
 --out      folder where the per-skill repos are written (created or updated in place)
 
 Only files managed by this script are overwritten; anything else in an output repo
@@ -35,7 +35,7 @@ EXTRA_CREDITS = {
     "choosing-agent-components": "[Hainrixz/claude-anatomy](https://github.com/Hainrixz/claude-anatomy)",
 }
 
-CATEGORY = {"dev-workflow": "development", "agent-guardrails": "security"}
+CATEGORY = {"dev-workflow": "development", "agent-guardrails": "security", "growth-workflow": "marketing"}
 
 
 def credits_for(name: str, bundle: Path) -> str:
