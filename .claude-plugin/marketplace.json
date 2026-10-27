@@ -1,0 +1,40 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "nvvdev",
+  "description": "Open-source skills, agents and guardrails for coding agents, from the nvvdev community.",
+  "owner": {
+    "name": "nvvdev"
+  },
+  "plugins": [
+    {
+      "name": "dev-workflow",
+      "description": "Engineering workflow skills: TDD, systematic debugging, verification before completion, deep and maintainability reviews, EARS criteria, ADRs, plan grilling, devil's advocate, triage, worktrees, pre-deploy audit, threat modeling and architecture review.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/dev-workflow.git"
+      },
+      "homepage": "https://github.com/nvv-dev/dev-workflow"
+    },
+    {
+      "name": "dev-agents",
+      "description": "A small software team as subagents: coordinator, functional analyst, tech lead, code auditor, QA, security reviewer and area engineers, each with explicit tools and limits.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/dev-agents.git"
+      },
+      "homepage": "https://github.com/nvv-dev/dev-agents"
+    },
+    {
+      "name": "agent-guardrails",
+      "description": "A tested hook that blocks destructive shell commands, skills to vet third-party skills and choose the lightest component, and governance templates.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/agent-guardrails.git"
+      },
+      "homepage": "https://github.com/nvv-dev/agent-guardrails"
+    }
+  ]
+}
