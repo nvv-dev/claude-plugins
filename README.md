@@ -12,6 +12,32 @@
 | [dev-agents](https://github.com/nvv-dev/dev-agents) | 12 subagentes con responsabilidades, herramientas y límites: coordinador, analista funcional, líder técnico, auditor, QA, seguridad, backend, frontend, Android, iOS, datos e infraestructura | Equipos (o personas solas) que quieren dividir el trabajo por roles |
 | [agent-guardrails](https://github.com/nvv-dev/agent-guardrails) | Hook probado contra comandos destructivos, proceso para evaluar skills de terceros y plantillas de CLAUDE.md, permisos, lockfile, pre-commit y CI | Todos: es lo primero que conviene instalar |
 
+## Una skill, un repo
+
+Cada skill también tiene su propio repo, con su objetivo, ejemplos y manual de instalación. Instala solo la que necesites (`/plugin install <skill>@nvvdev`) o el paquete completo, pero no los dos a la vez.
+
+<!-- skills:start -->
+| Skill | En una línea | Se activa | Paquete |
+|---|---|---|---|
+| [test-driven-development](https://github.com/nvv-dev/test-driven-development) | Que el agente escriba primero la prueba que demuestra el comportamiento, y después el código. | sola | dev-workflow |
+| [systematic-debugging](https://github.com/nvv-dev/systematic-debugging) | Ninguna corrección sin causa raíz. | sola | dev-workflow |
+| [verification-before-completion](https://github.com/nvv-dev/verification-before-completion) | "Listo" es una afirmación, y necesita evidencia. | sola | dev-workflow |
+| [code-review-deep](https://github.com/nvv-dev/code-review-deep) | Pocos hallazgos, verificados, con severidad y línea. | sola | dev-workflow |
+| [code-review-maintainability](https://github.com/nvv-dev/code-review-maintainability) | ¿Este cambio hace el código más barato o más caro de cambiar? | sola | dev-workflow |
+| [grill-the-plan](https://github.com/nvv-dev/grill-the-plan) | Resolver cada decisión abierta antes de escribir código. | a mano | dev-workflow |
+| [ears-acceptance-criteria](https://github.com/nvv-dev/ears-acceptance-criteria) | Requisitos que un tester puede convertir en pruebas sin preguntarle a nadie. | sola | dev-workflow |
+| [writing-adrs](https://github.com/nvv-dev/writing-adrs) | Dejar por escrito por qué se decidió algo, no solo qué. | sola | dev-workflow |
+| [devils-advocate](https://github.com/nvv-dev/devils-advocate) | Asume que la idea va a fracasar e intenta demostrarlo. | a mano | dev-workflow |
+| [issue-triage](https://github.com/nvv-dev/issue-triage) | Cada issue en un estado, y los listos con un brief ejecutable. | sola | dev-workflow |
+| [git-worktrees](https://github.com/nvv-dev/git-worktrees) | Dos agentes, dos carpetas, cero archivos pisados. | sola | dev-workflow |
+| [finishing-a-branch](https://github.com/nvv-dev/finishing-a-branch) | Chequeos finales, commits limpios y un PR que se puede revisar. | sola | dev-workflow |
+| [pre-deploy-audit](https://github.com/nvv-dev/pre-deploy-audit) | Atrapar lo que pasa todas las pruebas pero rompe o expone producción. | sola | dev-workflow |
+| [threat-modeling](https://github.com/nvv-dev/threat-modeling) | Encontrar los problemas de seguridad cuando todavía son una línea del plan. | sola | dev-workflow |
+| [architecture-review](https://github.com/nvv-dev/architecture-review) | Refactorizar donde el código cambia, no donde se ve feo. | a mano | dev-workflow |
+| [vetting-external-skills](https://github.com/nvv-dev/vetting-external-skills) | Tratar cada skill, plugin o MCP externo como código de un desconocido. | sola | agent-guardrails |
+| [choosing-agent-components](https://github.com/nvv-dev/choosing-agent-components) | ¿Skill, subagente, hook, MCP o una línea en CLAUDE.md? | a mano | agent-guardrails |
+<!-- skills:end -->
+
 ## Instalar en Claude Code
 
 ```text
@@ -20,6 +46,16 @@
 /plugin install dev-workflow@nvvdev
 /plugin install dev-agents@nvvdev
 ```
+
+## Mantener los repos por skill
+
+La versión canónica de cada skill vive en su paquete (`dev-workflow` o `agent-guardrails`), y los textos de cada README en [catalog/skills.json](catalog/skills.json). Los repos individuales se generan:
+
+```bash
+python3 scripts/export_skill_repos.py --bundles .. --out ../skills
+```
+
+El script actualiza también este índice y el marketplace. Nunca edites un repo individual a mano: el cambio se pierde en la siguiente generación.
 
 ## Usar sin Claude Code
 

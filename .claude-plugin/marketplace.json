@@ -35,6 +35,176 @@
         "url": "https://github.com/nvv-dev/agent-guardrails.git"
       },
       "homepage": "https://github.com/nvv-dev/agent-guardrails"
+    },
+    {
+      "name": "test-driven-development",
+      "description": "Drives work as red-green-refactor cycles at the module's public boundary, and forbids weakening tests to get green.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/test-driven-development.git"
+      },
+      "homepage": "https://github.com/nvv-dev/test-driven-development"
+    },
+    {
+      "name": "systematic-debugging",
+      "description": "Reproduce first, one hypothesis at a time, fix at the source, stop after three failed attempts, redact secrets.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/systematic-debugging.git"
+      },
+      "homepage": "https://github.com/nvv-dev/systematic-debugging"
+    },
+    {
+      "name": "verification-before-completion",
+      "description": "Fresh evidence after the last change, checked against each acceptance criterion, plus an honest list of what was weakened or skipped.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/verification-before-completion.git"
+      },
+      "homepage": "https://github.com/nvv-dev/verification-before-completion"
+    },
+    {
+      "name": "code-review-deep",
+      "description": "Reviews only what changed for bugs, breaking changes, security and half-activated features; every finding has a verdict, severity and file:line.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/code-review-deep.git"
+      },
+      "homepage": "https://github.com/nvv-dev/code-review-deep"
+    },
+    {
+      "name": "code-review-maintainability",
+      "description": "Reviews shape, not bugs: size, branching, shallow modules, leaky layers; few high-conviction comments.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/code-review-maintainability.git"
+      },
+      "homepage": "https://github.com/nvv-dev/code-review-maintainability"
+    },
+    {
+      "name": "grill-the-plan",
+      "description": "Walks a spec or plan one question at a time, updating the glossary and drafting ADRs as decisions are made.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/grill-the-plan.git"
+      },
+      "homepage": "https://github.com/nvv-dev/grill-the-plan"
+    },
+    {
+      "name": "ears-acceptance-criteria",
+      "description": "Turns vague requirements into EARS acceptance criteria and gives every task a verification command.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/ears-acceptance-criteria.git"
+      },
+      "homepage": "https://github.com/nvv-dev/ears-acceptance-criteria"
+    },
+    {
+      "name": "writing-adrs",
+      "description": "Short ADRs in docs/adr/ with context, options, decision and honest consequences.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/writing-adrs.git"
+      },
+      "homepage": "https://github.com/nvv-dev/writing-adrs"
+    },
+    {
+      "name": "devils-advocate",
+      "description": "Attacks an idea from eight angles after six forcing questions, then gives a verdict, a scope mode and a prioritized fix list.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/devils-advocate.git"
+      },
+      "homepage": "https://github.com/nvv-dev/devils-advocate"
+    },
+    {
+      "name": "issue-triage",
+      "description": "Assigns each item one of five states and writes self-contained briefs for agent-ready work.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/issue-triage.git"
+      },
+      "homepage": "https://github.com/nvv-dev/issue-triage"
+    },
+    {
+      "name": "git-worktrees",
+      "description": "One worktree per task on its own branch, with safe cleanup that never discards work.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/git-worktrees.git"
+      },
+      "homepage": "https://github.com/nvv-dev/git-worktrees"
+    },
+    {
+      "name": "finishing-a-branch",
+      "description": "Final checks, self-review of the diff, Conventional Commits and a PR description; never merges or pushes to main.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/finishing-a-branch.git"
+      },
+      "homepage": "https://github.com/nvv-dev/finishing-a-branch"
+    },
+    {
+      "name": "pre-deploy-audit",
+      "description": "Release blockers (secrets, debug settings, missing config, unsafe migrations) and a deploy plan with health check and rollback.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/pre-deploy-audit.git"
+      },
+      "homepage": "https://github.com/nvv-dev/pre-deploy-audit"
+    },
+    {
+      "name": "threat-modeling",
+      "description": "Assets, entry points and trust boundaries, then concrete threats across twelve domains with mitigations and tests.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/threat-modeling.git"
+      },
+      "homepage": "https://github.com/nvv-dev/threat-modeling"
+    },
+    {
+      "name": "architecture-review",
+      "description": "Hotspots from churn × complexity, five ranked refactoring candidates, no changes made.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/architecture-review.git"
+      },
+      "homepage": "https://github.com/nvv-dev/architecture-review"
+    },
+    {
+      "name": "vetting-external-skills",
+      "description": "Read without running, SkillSpector scan, fit and cost check, pin to a commit, record in a lockfile, credit the source.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/vetting-external-skills.git"
+      },
+      "homepage": "https://github.com/nvv-dev/vetting-external-skills"
+    },
+    {
+      "name": "choosing-agent-components",
+      "description": "A decision order from 'nothing' to 'plugin' that picks the cheapest component that reliably does the job.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/choosing-agent-components.git"
+      },
+      "homepage": "https://github.com/nvv-dev/choosing-agent-components"
     }
   ]
 }
