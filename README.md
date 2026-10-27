@@ -9,7 +9,7 @@
 | Repo | Qué trae | Para quién |
 |---|---|---|
 | [dev-workflow](https://github.com/nvv-dev/dev-workflow) | 15 skills de ingeniería: TDD, depuración sistemática, verificación antes de cerrar, revisiones profunda y de mantenibilidad, criterios EARS, ADR, abogado del diablo, triage, worktrees, auditoría previa al despliegue, modelo de amenazas, revisión de arquitectura | Cualquier persona que programe con agentes |
-| [dev-agents](https://github.com/nvv-dev/dev-agents) | 12 subagentes con responsabilidades, herramientas y límites: coordinador, analista funcional, líder técnico, auditor, QA, seguridad, backend, frontend, Android, iOS, datos e infraestructura | Equipos (o personas solas) que quieren dividir el trabajo por roles |
+| [dev-agents](https://github.com/nvv-dev/dev-agents) | 14 subagentes con responsabilidades, herramientas y límites: coordinador, analista funcional, líder técnico, auditor, QA, seguridad, backend, frontend, Android, iOS, datos, infraestructura, diseño UI/UX y SEO/GEO | Equipos (o personas solas) que quieren dividir el trabajo por roles |
 | [agent-guardrails](https://github.com/nvv-dev/agent-guardrails) | Hook probado contra comandos destructivos, proceso para evaluar skills de terceros y plantillas de CLAUDE.md, permisos, lockfile, pre-commit y CI | Todos: es lo primero que conviene instalar |
 
 ## Una skill, un repo
@@ -34,6 +34,7 @@ Cada skill también tiene su propio repo, con su objetivo, ejemplos y manual de 
 | [pre-deploy-audit](https://github.com/nvv-dev/pre-deploy-audit) | Atrapar lo que pasa todas las pruebas pero rompe o expone producción. | sola | dev-workflow |
 | [threat-modeling](https://github.com/nvv-dev/threat-modeling) | Encontrar los problemas de seguridad cuando todavía son una línea del plan. | sola | dev-workflow |
 | [architecture-review](https://github.com/nvv-dev/architecture-review) | Refactorizar donde el código cambia, no donde se ve feo. | a mano | dev-workflow |
+| [anti-generic-design-review](https://github.com/nvv-dev/anti-generic-design-review) | Que la interfaz no parezca hecha por IA: cada decisión, propia. | sola | dev-workflow |
 | [vetting-external-skills](https://github.com/nvv-dev/vetting-external-skills) | Tratar cada skill, plugin o MCP externo como código de un desconocido. | sola | agent-guardrails |
 | [choosing-agent-components](https://github.com/nvv-dev/choosing-agent-components) | ¿Skill, subagente, hook, MCP o una línea en CLAUDE.md? | a mano | agent-guardrails |
 <!-- skills:end -->
@@ -83,7 +84,7 @@ MIT en todos los repos.
 Index of the skills, agents and guardrails published by the **nvvdev** community. Each package lives in its own repository: browse it, copy only what you need, or install it as a Claude Code plugin from this marketplace with `/plugin marketplace add nvv-dev/claude-plugins` and then `/plugin install <name>@nvvdev`.
 
 - **[dev-workflow](https://github.com/nvv-dev/dev-workflow)** — 15 engineering skills.
-- **[dev-agents](https://github.com/nvv-dev/dev-agents)** — 12 role-based subagents with explicit limits.
+- **[dev-agents](https://github.com/nvv-dev/dev-agents)** — 14 role-based subagents with explicit limits.
 - **[agent-guardrails](https://github.com/nvv-dev/agent-guardrails)** — destructive-command hook, skill vetting and governance templates.
 
 Skills use the open `SKILL.md` format and work in other compatible agents. Everything is written from scratch, credited, scanned with SkillSpector in CI, and MIT-licensed.
