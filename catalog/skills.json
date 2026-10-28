@@ -322,7 +322,7 @@
       "goal": "Llegar al abogado con una lista corta de vacíos reales y preguntas precisas, en lugar de un \"¿me revisas esto?\".",
       "use_when": ["Antes de lanzar o de enviar una app a revisión", "Después de agregar formularios, analítica, pagos o un SDK que recoge datos"],
       "avoid_when": ["Como reemplazo de un abogado: no aprueba ni certifica nada", "Contratos complejos o sectores regulados sin revisión profesional"],
-      "example": "/legal-pages-check sobre la política de privacidad de kodaloom.com para Colombia.",
+      "example": "/legal-pages-check sobre la política de privacidad de mi sitio web para Colombia.",
       "invocation": "manual",
       "en": "Checks privacy policy, terms and cookie notice against a per-country checklist (Colombia's Law 1581 as example) and what the app declares; flags what a lawyer must see. Not legal advice."
     }
