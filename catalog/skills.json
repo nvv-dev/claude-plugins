@@ -325,6 +325,19 @@
       "example": "/legal-pages-check sobre la política de privacidad de kodaloom.com para Colombia.",
       "invocation": "manual",
       "en": "Checks privacy policy, terms and cookie notice against a per-country checklist (Colombia's Law 1581 as example) and what the app declares; flags what a lawyer must see. Not legal advice."
+    },
+    {
+      "name": "pricing-research",
+      "source_repo": "growth-workflow",
+      "title": "Investigación de precios",
+      "tagline": "Tres referencias y una recomendación: cuánto cuesta, cuánto cobra el mercado y cuánto vale.",
+      "what": "Por cada producto o servicio junta el piso de costo (con las cifras que tú das), el rango de la competencia (cada precio con fuente y fecha, solo de páginas públicas) y el techo de valor para el comprador. Recomienda un precio con su supuesto y una prueba con métrica y regla de decisión. No publica ni cambia precios y, en impuestos, dice \"validar con un contador\".",
+      "goal": "Poner precio con evidencia y una forma de equivocarse barato, en lugar de copiar a la competencia o adivinar.",
+      "use_when": ["Antes de lanzar un producto o servicio y fijar su precio", "Cuando un precio parece alto o bajo, o la competencia cambió el suyo"],
+      "avoid_when": ["Asesoría tributaria o contable: validar con un contador", "Subir precios a clientes actuales: la skill propone, tú decides y avisas"],
+      "example": "/pricing-research para tres paquetes de un estudio web freelance, con tres competidores citados con fuente y fecha.",
+      "invocation": "manual",
+      "en": "Per product or service: cost floor, competitor range with source and date, value ceiling, and one recommended price with its assumption and a test. Never publishes or changes prices; no tax advice."
     }
   ]
 }
