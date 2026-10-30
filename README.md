@@ -95,7 +95,7 @@ MIT en todos los repos.
 
 Index of the skills, agents and guardrails published by the **nvvdev** community. Each package lives in its own repository: browse it, copy only what you need, or install it as a Claude Code plugin from this marketplace with `/plugin marketplace add nvv-dev/claude-plugins` and then `/plugin install <name>@nvvdev`.
 
-- **[dev-workflow](https://github.com/nvv-dev/dev-workflow)** — 15 engineering skills.
+- **[dev-workflow](https://github.com/nvv-dev/dev-workflow)** — 16 engineering skills.
 - **[dev-agents](https://github.com/nvv-dev/dev-agents)** — 14 role-based subagents with explicit limits.
 - **[agent-guardrails](https://github.com/nvv-dev/agent-guardrails)** — destructive-command hook, skill vetting and governance templates.
 - **[growth-workflow](https://github.com/nvv-dev/growth-workflow)** — 8 marketing and launch skills.
