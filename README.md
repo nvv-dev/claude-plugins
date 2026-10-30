@@ -8,7 +8,7 @@
 
 | Repo | Qué trae | Para quién |
 |---|---|---|
-| [dev-workflow](https://github.com/nvv-dev/dev-workflow) | 15 skills de ingeniería: TDD, depuración sistemática, verificación antes de cerrar, revisiones profunda y de mantenibilidad, criterios EARS, ADR, abogado del diablo, triage, worktrees, auditoría previa al despliegue, modelo de amenazas, revisión de arquitectura | Cualquier persona que programe con agentes |
+| [dev-workflow](https://github.com/nvv-dev/dev-workflow) | 16 skills de ingeniería: TDD, depuración sistemática, verificación antes de cerrar, revisiones profunda y de mantenibilidad, criterios EARS, ADR, abogado del diablo, triage, worktrees, auditoría previa al despliegue, modelo de amenazas, revisión de arquitectura | Cualquier persona que programe con agentes |
 | [dev-agents](https://github.com/nvv-dev/dev-agents) | 14 subagentes con responsabilidades, herramientas y límites: coordinador, analista funcional, líder técnico, auditor, QA, seguridad, backend, frontend, Android, iOS, datos, infraestructura, diseño UI/UX y SEO/GEO | Equipos (o personas solas) que quieren dividir el trabajo por roles |
 | [agent-guardrails](https://github.com/nvv-dev/agent-guardrails) | Hook probado contra comandos destructivos, proceso para evaluar skills de terceros y plantillas de CLAUDE.md, permisos, lockfile, pre-commit y CI | Todos: es lo primero que conviene instalar |
 | [growth-workflow](https://github.com/nvv-dev/growth-workflow) | 8 skills de marketing y lanzamiento: contexto del producto, perfil de voz, copy de landings, revisión de posts, fichas de tiendas de apps, checklist de lanzamiento, revisión de páginas legales e investigación de precios | Quien lanza y vende un producto con agentes |
