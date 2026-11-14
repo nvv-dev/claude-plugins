@@ -38,7 +38,7 @@
     },
     {
       "name": "growth-workflow",
-      "description": "Marketing and launch skills: versioned product context, voice profile, landing copy with proof for every claim, post review, app store listings, launch checklist and a legal pages check.",
+      "description": "Marketing and launch skills: versioned product context, voice profile, landing copy with proof for every claim, post review, app store listings, launch checklist, a legal pages check and pricing research.",
       "category": "marketing",
       "source": {
         "source": "url",
@@ -48,7 +48,7 @@
     },
     {
       "name": "growth-agents",
-      "description": "A small marketing team as subagents: copywriter, content strategist, growth marketer and legal reviewer. None publishes, sends, spends money or changes prices.",
+      "description": "A small marketing team as subagents: copywriter, content strategist, growth marketer, legal reviewer and pricing analyst. None publishes, sends, spends money or changes prices.",
       "category": "marketing",
       "source": {
         "source": "url",
@@ -305,6 +305,16 @@
         "url": "https://github.com/nvv-dev/legal-pages-check.git"
       },
       "homepage": "https://github.com/nvv-dev/legal-pages-check"
+    },
+    {
+      "name": "pricing-research",
+      "description": "Per product or service: cost floor, competitor range with source and date, value ceiling, and one recommended price with its assumption and a test. Never publishes or changes prices; no tax advice.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvv-dev/pricing-research.git"
+      },
+      "homepage": "https://github.com/nvv-dev/pricing-research"
     }
   ]
 }
